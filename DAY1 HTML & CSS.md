@@ -24,7 +24,7 @@
 # 2.hover 
 ### 鼠标放在上面会变化
 ```html
-<pre> ```<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Hello!</title>
@@ -43,7 +43,7 @@
     <body>
         <button>Click Me!</button>
     </body>
-</html>``` </pre>
+</html>
 ```
 # 3.attribute
 ```html
