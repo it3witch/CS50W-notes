@@ -9,8 +9,8 @@
 - 学会使用链接、图片和表格。
 
 # 1.Hello world!
-
-```<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Hello!</title>
@@ -18,11 +18,12 @@
     <body>
         Hello, world!
     </body>
-</html>```
+</html>
+```
 
 # 2.hover 
 ### 鼠标放在上面会变化
-
+```html
 <pre> ```<!DOCTYPE html>
 <html lang="en">
     <head>
@@ -43,9 +44,9 @@
         <button>Click Me!</button>
     </body>
 </html>``` </pre>
-
+```
 # 3.attribute
-
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -65,10 +66,11 @@
         <ul><a href="http://baidu.com">Baidu</a></ul>
     </body>
 </html>
+```
 -指定a标签内的特定来源使用a[]
 
 # 4.class & id
-
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -85,7 +87,9 @@
         <h1>Heading 3</h1>
     </body>
 </html>
+```
 
+```html
 <html lang="en">
     <head>
         <title>Hello!</title>
@@ -101,12 +105,12 @@
         <h1>Heading 3</h1>
     </body>
 </html>
+```
 
 -指定class使用 .
 -指定id使用 #
 
 # 4.table
-
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -146,6 +150,47 @@
     </body>
 </html>
 
+```html
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Table</title>
+        <style>
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td,th {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ocean</th>
+                    <th>Average Depth</th>
+                    <th>Maximum Depth</th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pacific Ocean</td>
+                    <td>4,280 m</td>
+                    <td>10,911 m</td>
+                </tr>
+                <tr>
+                    <td>Atlantic Ocean</td>
+                    <td>3,646 m</td>
+                    <td>8,486 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+```
+
 -  table表格分为thead & tbody，thead内部有<tr>表示table row（行），然后<th>表示表头
  在tbody中用<tr>区分行，然后每行中用<td> table data写每一格的数据
 
@@ -153,8 +198,8 @@
  border-collapse: collapse;表示把线合并
 
 # 5.响应式设计
-
 -flexbox
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -190,8 +235,9 @@
         </div>
     </body>
 </html>
-
+```
 -grid
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -229,9 +275,9 @@
         </div>
     </body>
 </html>
-
+```
 # responsive
-
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -253,5 +299,5 @@
         <h1>Welcome to my Web Page!</h1>
     </body>
 </html>
-
+```
 -可以保证在窗口在大于600的时候显示red，小于599的时候显示blue
