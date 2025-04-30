@@ -10,7 +10,7 @@
 
 # 1.Hello world!
 
-<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Hello!</title>
@@ -18,12 +18,12 @@
     <body>
         Hello, world!
     </body>
-</html>
+</html>```
 
 # 2.hover 
 ### 鼠标放在上面会变化
 
-<!DOCTYPE html>
+<pre> ```<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Hello!</title>
@@ -42,7 +42,7 @@
     <body>
         <button>Click Me!</button>
     </body>
-</html>
+</html>``` </pre>
 
 # 3.attribute
 
