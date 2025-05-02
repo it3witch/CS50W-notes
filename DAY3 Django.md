@@ -47,19 +47,19 @@ Content-Type: text/html
                     <td>OK</td>
                 </tr>
                 <tr>
-                    <td>301<td>
+                    <td>301</td>
                     <td>Moved permanently</td>
                 </tr>
                 <tr>
-                    <td>403<td>
+                    <td>403</td>
                     <td>Forbidden</td>
                 </tr>
                 <tr>
-                    <td>404<td>
+                    <td>404</td>
                     <td>Not Found</td>
                 </tr>
                 <tr>
-                    <td>500<td>
+                    <td>500</td>
                     <td>Internal Server Error</td>
                 </tr>
             </tbody>
@@ -233,3 +233,17 @@ def index(request):
 其原理是调用datetime库来获取当前的日期时间，然后向newyear/index.html传递一个信息，为newyear变量（布尔型），判断条件是当前日期是否为1月1日
 
 在django的语法下判断语句使用{% if newyear %}，{% else %}来判断，在判断结束时使用{% endif %}来表示判断语句结束
+
+### 添加css
+在newyear文件夹下新建static/newyear
+
+static/newyear/styles.css
+```css
+h1 {
+    font-family: sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
+```
+然后再index.html顶部添加{% load static %}来表示为该页面加载静态文件
+再在<head>中添加<link href="{% static 'newyear/styles.css'%}" rel="stylesheet">
