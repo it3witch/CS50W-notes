@@ -150,10 +150,11 @@ def index(request):
     </body>
 </html>
 ```
+
 这样index就指向了这个HTML界面
 
-# django模板语言渲染HTML
-可以利用django自带的模板语言，使得HTML带有变量，判断和循环等
+# Django模板语言渲染HTML
+可以利用Django自带的模板语言，使得HTML带有变量，判断和循环等
 views.py
 ```py
 from django.http import HttpResponse
@@ -174,8 +175,9 @@ from . import views
 urlpatterns = [
     path("<str:name>", views.greet, name="greet")
 ]
-render可以接受一个可选的第三个参数，称为上下文(context)，它可以提供给模板所有其中的信息，变量，实例等
 ```
+render可以接受一个可选的第三个参数，称为上下文(context)，它可以提供给模板所有其中的信息，变量，实例等
+
 hello/templates/hello/greet.html
 ```html
 <!DOCTYPE html>
@@ -192,7 +194,7 @@ hello/templates/hello/greet.html
 ### 判断语句
 写一个应用程序来检测今天是不是元旦
 
-在django下运行python manage.py startapp newyear，会得到一个新的app，newyear
+在Django下运行python manage.py startapp newyear，会得到一个新的app，newyear
 
 记得在/Django_exercise/setting.py的INSTALLED_APPS中添加'newyear'
 同时在/Django_exercise/urls.py中添加path('newyear/', include("newyear.urls"))确保能获取到newyear的urls
